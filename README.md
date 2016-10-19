@@ -1,4 +1,4 @@
-###### (c) copyright 2016 - Milton Vincenttis
+###### (c) Copyright 2016 - Milton Vincenttis
 ---
 ## CORA: Core Architecture
 Visionando uma Arquitetura Escalável.
