@@ -1,6 +1,6 @@
-###### (c) Copyright 2016 - Milton Vincenttis
----
-## CORA: Core Architecture
+	###### (c) Copyright 2016 - Milton Vincenttis
+	---
+## Scalable Core Architecture
 Visionando uma Arquitetura Escalável.
 Desenhar e implementar uma arquitetura base para Apps escaláveis.
 
@@ -35,25 +35,27 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
 * Mensageria
 * Persistencia
 
-#### Communicação:
-  * API Gateway - Public Open Source [kong | tyk.io]
+#### Comunicação:
+  * API Gateway
   * RESTful API
     * Vertx + EasyRest + Atmosphere
 
-#### Segurança
+#### Segurança (Keycloak)
 * Registro:
-   * usr+pwd
-   * Two-way
+	* usr+pwd
+	* Two-way
 * Autenticação:
-  * JWTdh | OAuth
+	* OAuth2
+
 * Autorização:
-  * Spring Security
+	* Spring Security OAuth2
+
 * Criptografia:
-  * Canal Seguro: TLS (certificados)
-  * Ponta-a-Ponta: Noise | Signal
+	* Canal Seguro: TLS (certificados)
+	* Ponta-a-Ponta: Noise | Signal
 
 #### Mensageria
-* NATS
+* RabbitMQ | NATS
   * Queue
   * Pub/Sub
 
@@ -66,12 +68,39 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
 ## Infraestrutura:
 
 #### Serviços em Cloud:
-* Public OpenSource API Gateway:
+
+** GCP - Google Cloud Platform: **
+  * AppEngine
+  * Storage
+  * Bigtable
+  * Datastore
+
+** AWS - Amazon Web Services **
+  * S3  - Simple Storage Services: arquivos
+  * EC2 - Elastic Compute Cloud: app
+  * Route53 - API Gateway
+  
+** Public OpenSource API Gateway: **
   * kong | tyk.io
-* Armazenagem de arquivos:
-  * AWS-S3 - Simple Storage
-  * Google Cloud Storage/Bigtable/Datastore
-* Hospedagem web app:
-  * AWS-EC2 - Elastic Compute Cloud
-  * GCP - Google Cloud Platform:
-    * App Engine
+
+---
+
+#### Serviços em ambiente de Desenvolvimento:
+  * Persistence
+	* MySQL 5.7.16
+	* Cassandra
+	  
+  * Mensaging (decidir)
+	* RabbitMQ
+	* ZeroMQ
+	* NATS
+  
+  * Cache
+	* Redis
+	* Hazelcast
+
+  * Monitoring	
+
+** Todo **
+  * MySQL =     (docker.hub=!ok simplesmente sumiu)
+  * RabbitMQ     
