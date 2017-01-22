@@ -1,4 +1,4 @@
-###### (c) Copyright 2016 - Milton Vincenttis
+###### Copyright (c) 2016 - Milton Vincenttis
 ---
 ## Scalable Core Architecture
 Visionando uma Arquitetura Escalável.
