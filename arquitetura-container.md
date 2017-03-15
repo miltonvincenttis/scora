@@ -5,7 +5,6 @@
 #### Camada dockerizada:
 * Communication
 	* vertx/vertx3:3.3.3 
-* Messaging
 	* nats:0.9.4
 	* rabbitmq:3.6.6
 * Security
