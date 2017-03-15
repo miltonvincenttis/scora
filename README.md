@@ -32,14 +32,15 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
 
 * Communicação
 * Segurança
-* Mensageria
 * Persistencia
 
 #### Comunicação:
   * API Gateway
   * RESTful API
     * Vertx + EasyRest + Atmosphere
-
+  * Mensageria
+    * RabbitMQ | NATS
+  
 #### Segurança (Keycloak)
 * Registro:
 	* usr+pwd
@@ -53,12 +54,7 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
 * Criptografia:
 	* Canal Seguro: TLS (certificados)
 	* Ponta-a-Ponta: Noise | Signal
-
-#### Mensageria
-* RabbitMQ | NATS
-  * Queue
-  * Pub/Sub
-
+	
 #### Persistencia
 * SQL
   * MySQL
@@ -90,7 +86,7 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
 	* MySQL 5.7.16
 	* Cassandra
 	  
-  * Mensaging (decidir)
+  * Messaging
 	* RabbitMQ
 	* ZeroMQ
 	* NATS
@@ -102,5 +98,5 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
   * Monitoring	
 
 ** Todo **
-  * MySQL =     (docker.hub=!ok simplesmente sumiu)
+  * MySQL
   * RabbitMQ     
