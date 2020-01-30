@@ -37,7 +37,7 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
 #### Comunicação:
   * API Gateway
   * RESTful API
-    * Vertx + EasyRest + Atmosphere
+    * Vertx + RestEasy + Atmosphere
   * Mensageria
     * RabbitMQ | NATS
   
