@@ -1,6 +1,6 @@
 ###### Copyright (c) 2016 - Milton Vincenttis
 ---
-## Scalable Core Architecture
+## Scalable Core Architecture (in progress)
 Visionando uma Arquitetura Escalável.
 Desenhar e implementar uma arquitetura base para Apps escaláveis.
 
