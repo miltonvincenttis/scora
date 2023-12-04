@@ -43,14 +43,14 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
     * RabbitMQ | NATS
   
 #### Segurança (Keycloak)
-* Registro:
-	* usr+pwd
-	* Two-way
+
 * Autenticação:
-	* OAuth2
+ * JWS token
+ * eventualmente OAuth2
 
 * Autorização:
-	* Spring Security OAuth2
+ * RBAC
+ * eventualmente OAuth2
 
 * Criptografia:
 	* Canal Seguro: TLS (certificados)
