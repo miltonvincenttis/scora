@@ -42,16 +42,16 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
   
 #### Segurança
 * Autenticação:
- * JWS token
- * eventualmente OAuth2
+ 	* JWS token
+ 	* eventualmente OAuth2
 
 * Autorização:
- * RBAC
- * eventualmente OAuth2
+ 	* RBAC
+ 	* eventualmente OAuth2
 
 * Criptografia:
-   * Canal Seguro: TLS (certificados)
-   * Ponta-a-Ponta: Noise | Signal
+   	* Canal Seguro: TLS (certificados)
+   	* Ponta-a-Ponta: Noise | Signal
 	
 #### Persistencia
 * SQL
