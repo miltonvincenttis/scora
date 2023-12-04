@@ -36,14 +36,11 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
 * Observabilidade
 
 #### Comunicação:
-  * API Gateway
-  * RESTful API
-    * Vertx + RestEasy + Atmosphere
-  * Mensageria
-    * RabbitMQ | NATS
+  * RESTful API, BFF, API Gateway
+  * Mensageria (BUS)
+    * RabbitMQ, Kafka
   
-#### Segurança (Keycloak)
-
+#### Segurança
 * Autenticação:
  * JWS token
  * eventualmente OAuth2
@@ -53,14 +50,14 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
  * eventualmente OAuth2
 
 * Criptografia:
-	* Canal Seguro: TLS (certificados)
-	* Ponta-a-Ponta: Noise | Signal
+   * Canal Seguro: TLS (certificados)
+   * Ponta-a-Ponta: Noise | Signal
 	
 #### Persistencia
 * SQL
-  * MySQL
+  * Postgres
 * NOSQL
-  * Cassandra
+  * Postgres + jsonb (columns)
 
 #### Observabilidade
 * Metrics    	(Quarkus)
@@ -82,9 +79,6 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
   * Bigtable
   * Datastore
   
-** Public OpenSource API Gateway: **
-  * kong | tyk.io
-
 ---
 
 #### Serviços em ambiente de Desenvolvimento:
