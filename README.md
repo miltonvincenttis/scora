@@ -33,6 +33,7 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
 * Communicação
 * Segurança
 * Persistencia
+* Observabilidade
 
 #### Comunicação:
   * API Gateway
@@ -61,20 +62,25 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
 * NOSQL
   * Cassandra
 
+#### Observabilidade
+* Metrics    	(Quarkus)
+* Tracing	(Quarkus)
+* Logging	(Quarkus)
+  
 ## Infraestrutura:
 
 #### Serviços em Cloud:
+
+** AWS - Amazon Web Services **
+  * S3  - Simple Storage Services: arquivos
+  * EC2 - Elastic Compute Cloud: app
+  * Route53 - API Gateway
 
 ** GCP - Google Cloud Platform: **
   * AppEngine
   * Storage
   * Bigtable
   * Datastore
-
-** AWS - Amazon Web Services **
-  * S3  - Simple Storage Services: arquivos
-  * EC2 - Elastic Compute Cloud: app
-  * Route53 - API Gateway
   
 ** Public OpenSource API Gateway: **
   * kong | tyk.io
