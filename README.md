@@ -94,9 +94,3 @@ A Arquitetura é construída e executada utilizando-se **OSS**.
   * Cache
 	* Redis
 	* Hazelcast
-
-  * Monitoring	
-
-** Todo **
-  * MySQL
-  * RabbitMQ     
